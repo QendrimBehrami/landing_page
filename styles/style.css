@@ -1,0 +1,35 @@
+:root {
+  --dark: #1f2937;
+  --main-text: #f9faf8;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.main {
+  flex: 1;
+}
+
+.header {
+  background-color: var(--dark);
+  color: var(--main-text);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 10%;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.right-links {
+  display: flex;
+  gap: 20px;
+}
