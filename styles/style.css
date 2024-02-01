@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 10%;
+  padding: 16px 10%;
 
   a {
     text-decoration: none;
@@ -84,13 +84,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1px;
-  h1 {
-    font-size: 48px;
-    padding-bottom: 0;
-    margin: 0 0;
-    align-items: left;
-    font-weight: bolder;
-  }
+}
+
+.hero h1 {
+  font-size: 48px;
+  padding-bottom: 0;
+  margin: 0 0;
+  align-items: left;
+  font-weight: bolder;
 }
 
 .information {
@@ -128,8 +129,8 @@ body {
   text-wrap: wrap;
 }
 
-.illustration text {
-  /* margin: -10px; */
+.illustration .text {
+  color: #6a727e;
 }
 
 .illustration img {
@@ -141,6 +142,25 @@ body {
 
 .quote {
   flex: 1;
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 15%;
+  justify-content: center;
+}
+
+.quote .text {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--dark);
+  font-size: 36px;
+}
+
+.quote .author {
+  text-align: right;
+  font-size: 18px;
+  color: var(--dark);
+  font-weight: 700;
 }
 
 .signup {
